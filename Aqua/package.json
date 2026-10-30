@@ -1,0 +1,25 @@
+{
+  "name": "living-aquarium",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node --test test/*.test.mjs",
+    "preview": "vite preview",
+    "inspect-assets": "node tools/inspect-assets.mjs",
+    "prepare-assets": "node tools/prepare-assets.mjs",
+    "analyze-assets": "node tools/analyze-assets.mjs > tools/asset-analysis.txt"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.1.1",
+    "@gltf-transform/extensions": "^4.1.1",
+    "@gltf-transform/functions": "^4.1.1",
+    "meshoptimizer": "^1.3.0",
+    "vite": "^5.4.11"
+  }
+}

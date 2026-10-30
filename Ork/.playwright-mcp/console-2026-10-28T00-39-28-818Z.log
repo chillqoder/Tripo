@@ -1,0 +1,10 @@
+[    1513ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1513ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1513ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1514ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1514ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1514ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1515ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1515ms] [WARNING] THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed. @ http://127.0.0.1:5173/@vite/client:367
+[    1529ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://127.0.0.1:5173/@vite/client:367
+[    1584ms] [WARNING] THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead. @ http://127.0.0.1:5173/@vite/client:367

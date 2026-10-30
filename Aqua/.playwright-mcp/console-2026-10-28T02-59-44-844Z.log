@@ -1,0 +1,351 @@
+[    1087ms] [INFO] [scale] orc 2.40 m tall, feet on y=0; axe (uniform scale 0.78): 0.96 m long, blade 0.55 m wide, handle diameter 9.1 cm @ http://127.0.0.1:5173/src/main.js?t=1793149657366:133
+[  112404ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/guppy%2Bfish%2B3d%2Bmodel.glb:0
+[  112421ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/favicon.ico:0
+[  112832ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/orange%2Bclownfish%2B3d%2Bmodel.glb:0
+[  113053ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/freshwater%2Bangelfish%2B3d%2Bmodel.glb:0
+[  113226ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/betta%2Bfish%2B3d%2Bmodel.glb:0
+[  113505ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/crab%2B3d%2Bmodel.glb:0
+[  113727ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/snail%2B3d%2Bmodel.glb:0
+[  113909ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/snail%2B3d%2Bmodel%202.glb:0
+[  114288ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/grass%2Bplant%2B3d%2Bmodel.glb:0
+[  114615ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/green%2Bleafy%2Bplant%2B3d%2Bmodel.glb:0
+[  114838ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/green%2Bplant%2B3d%2Bmodel.glb:0
+[  114960ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/aquatic%2Bplant%2B3d%2Bmodel.glb:0
+[  115098ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/medieval%2Bcastle%2B3d%2Bmodel.glb:0
+[  115218ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/sponge%2Bair%2Bfilter%2B3d%2Bmodel.glb:0
+[  115336ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/stone%2Brock%2B3d%2Bmodel.glb:0
+[  115750ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5180/models/stone%2Brocks%2B3d%2Bmodel.glb:0
+[ 1595195ms] [WARNING] WARNING: Multiple instances of Three.js being imported. @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:31105
+[ 1597669ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 667, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js:172
+[ 1597672ms] TypeError: f.steer is not a function
+    at FishSchool.step (http://127.0.0.1:5180/src/ai/fishSchool.js:235:34)
+    at simulate (http://127.0.0.1:5180/src/main.js:207:18)
+    at http://127.0.0.1:5180/src/main.js:254:3
+    at onAnimationFrame (http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:17628:37)
+    at onAnimationFrame (http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:8166:5)
+[ 1607673ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 667, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793157991586:172
+[ 1613480ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 667, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793157991586:172
+[ 1614086ms] [ERROR] THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false
+
+Material Name: 
+Material Type: ShaderMaterial
+
+Program Info Log: Fragment shader is not compiled.
+
+FRAGMENT
+
+ERROR: 0:207: 'projectionMatrix' : undeclared identifier
+
+  202: float eyeDepthAt(vec2 uv) {
+  203:   float z = texture2D(uSceneDepth, uv).x * 2.0 - 1.0;
+  204:   return 2.0 * uNearFar.x * uNearFar.y / (uNearFar.y + uNearFar.x - z * (uNearFar.y - uNearFar.x));
+  205: }
+  206: vec2 projectUV(vec3 wp) {
+> 207:   vec4 c = projectionMatrix * viewMatrix * vec4(wp, 1.0);
+  208:   return c.xy / c.w * 0.5 + 0.5;
+  209: }
+  210: // procedural room / lamp for reflections (no external HDR)
+  211: vec3 roomSky(vec3 r) {
+  212:   float upw = clamp(r.y, -1.0, 1.0);
+  213:   vec3 c = mix(vec3(0.035, 0.04, 0.045), vec3(0.16, 0.18, 0.19), smoothstep(-0.2, 0.9, upw)); @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:12209
+[ 1614086ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614100ms] [ERROR] THREE.WebGLProgram: Shader Error 1282 - VALIDATE_STATUS false
+
+Material Name: 
+Material Type: ShaderMaterial
+
+Program Info Log: Fragment shader is not compiled.
+
+FRAGMENT
+
+ERROR: 0:169: 'projectionMatrix' : undeclared identifier
+
+  164: float eyeDepthAt(vec2 uv) {
+  165:   float z = texture2D(uSceneDepth, uv).x * 2.0 - 1.0;
+  166:   return 2.0 * uNearFar.x * uNearFar.y / (uNearFar.y + uNearFar.x - z * (uNearFar.y - uNearFar.x));
+  167: }
+  168: vec2 projectUV(vec3 wp) {
+> 169:   vec4 c = projectionMatrix * viewMatrix * vec4(wp, 1.0);
+  170:   return c.xy / c.w * 0.5 + 0.5;
+  171: }
+  172: // procedural room / lamp for reflections (no external HDR)
+  173: vec3 roomSky(vec3 r) {
+  174:   float upw = clamp(r.y, -1.0, 1.0);
+  175:   vec3 c = mix(vec3(0.035, 0.04, 0.045), vec3(0.16, 0.18, 0.19), smoothstep(-0.2, 0.9, upw)); @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:12209
+[ 1614101ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614144ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614144ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614161ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614161ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614165ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614165ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614171ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614171ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614201ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614201ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614220ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614220ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614263ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614263ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614291ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614291ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614325ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614325ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614358ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614358ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614390ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614390ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614422ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614422ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614454ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614454ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614487ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614487ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614518ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614518ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614547ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614547ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614580ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614580ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614611ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614612ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614643ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614643ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614673ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614673ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614707ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614707ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614739ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614739ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614771ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614771ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614802ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614802ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614836ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614836ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614868ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614868ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614900ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614900ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614931ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614931ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614965ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1614965ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615001ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615001ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615030ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615030ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615065ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615065ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615097ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615097ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615129ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615129ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615161ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615161ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615193ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615193ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615226ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615227ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615259ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615259ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615289ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615289ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615323ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615323ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615359ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615359ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615392ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615392ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615425ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615425ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615458ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615458ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615491ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615491ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615522ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615522ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615557ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615557ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615589ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615589ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615621ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615621ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615661ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615661ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615692ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615692ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615732ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615732ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615796ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615796ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615826ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615826ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615859ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615859ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615897ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615897ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615930ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615930ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615962ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1615962ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616002ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616002ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616040ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616040ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616065ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616066ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616104ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616104ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616131ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616131ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616164ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616164ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616199ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616199ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616230ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616230ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616264ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616264ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616303ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616303ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616333ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616333ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616362ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616362ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616395ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616395ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616431ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616431ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616459ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616460ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616495ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616496ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616532ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616532ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616559ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616559ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616597ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616597ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616627ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616628ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616662ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616663ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616698ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616698ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616728ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616729ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616798ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616799ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616829ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616830ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616860ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616860ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616899ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616899ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616929ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616929ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616960ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616960ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616993ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1616993ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617027ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617027ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617058ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617058ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617089ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617089ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617120ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617120ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617152ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617152ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617184ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617184ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617216ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617216ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617256ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617256ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617287ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617287ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617319ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617319ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617350ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617350ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617385ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617385ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617417ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617418ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617448ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617449ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617479ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617479ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617510ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617510ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617541ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617541ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617572ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617572ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617603ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617603ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617634ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617634ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617667ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617667ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617696ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617696ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617728ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617728ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617760ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617792ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617792ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617822ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617822ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617854ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617854ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617885ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617885ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617918ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617918ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617949ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617949ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617977ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1617977ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618009ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618009ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618037ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618038ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618071ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618071ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618100ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618100ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618129ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618130ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618162ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618162ms] [WARNING] WebGL: INVALID_OPERATION: useProgram: program not valid @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1618162ms] [WARNING] WebGL: too many errors, no more errors will be reported to the console for this context. @ http://127.0.0.1:5180/node_modules/.vite/deps/chunk-UG26MVNH.js?v=a36a1735:14002
+[ 1627364ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1024, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158011241:172
+[ 1632484ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1024, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158011241:172
+[ 1653537ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1024, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158011241:172
+[ 1683708ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1024, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158067583:172
+[ 1698224ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1024, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158067583:172
+[ 1750688ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158134382:173
+[ 1756188ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158134382:173
+[ 1815442ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158134382:173
+[ 1886905ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158267765:173
+[ 1892536ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158267765:173
+[ 1999056ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158381525:177
+[ 2008158ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158381525:177
+[ 2027633ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158410643:177
+[ 2032181ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158410643:177
+[ 2059618ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158410643:177
+[ 2077576ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158460488:177
+[ 2080966ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158460488:177
+[ 2105285ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158488206:178
+[ 2109589ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158492812:178
+[ 2113808ms] [INFO] [aqua] inventory {fish: Array(4), pebbles: Array(3), pebbleTotal: 1504, rocks: Array(3), plants: Array(4)} @ http://127.0.0.1:5180/src/main.js?t=1793158497017:179
+[ 2939255ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5181/favicon.ico:0

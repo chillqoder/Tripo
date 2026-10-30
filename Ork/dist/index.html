@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Orc &amp; Axe — Forest Clearing</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2728%27 fill=%27%236b9a2f%27/%3E%3Cpath d=%27M20 40l12-22 12 22z%27 fill=%27%23f3ead8%27/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-a4xyQCe_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CWLQUyhN.css">
+</head>
+<body>
+  <canvas id="stage" aria-label="Interactive 3D scene: an orc with a battle axe in a forest clearing"></canvas>
+
+  <div id="loading" class="overlay">
+    <div class="loading-card">
+      <div class="loading-title">Summoning the orc…</div>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <div id="loading-note">Loading models</div>
+    </div>
+  </div>
+  <div id="error" class="overlay hidden" role="alert">
+    <div class="loading-card">
+      <div class="loading-title">Something went wrong</div>
+      <div id="error-text"></div>
+    </div>
+  </div>
+
+  <div id="hud">
+    <div id="hud-top">
+      <div id="status">idle</div>
+      <div class="hud-right">
+        <button id="btn-slowmo" class="chip" aria-pressed="false" title="Toggle slow motion (S)">Slow-mo <kbd>S</kbd></button>
+        <button id="btn-mute" class="chip" aria-pressed="false" title="Mute / unmute (M)">🔊 Sound <kbd>M</kbd></button>
+      </div>
+    </div>
+    <div id="audio-hint">Click or press a key to enable sound</div>
+    <div id="actions" role="group" aria-label="Actions">
+      <button class="act" data-action="raise"><span>Raise Axe &amp; Roar</span><kbd>1</kbd></button>
+      <button class="act" data-action="chest"><span>Beat Chest</span><kbd>2</kbd></button>
+      <button class="act" data-action="slam"><span>Ground Slam</span><kbd>3</kbd></button>
+    </div>
+  </div>
+
+</body>
+</html>

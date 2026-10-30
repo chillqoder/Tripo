@@ -1,0 +1,32 @@
+:root { color-scheme: dark; --ink: #f3ead8; --panel: rgba(18, 14, 10, .62); --edge: rgba(255, 220, 160, .28); --hot: #f0a43a; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0d1109; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); }
+#stage { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; outline: none; }
+.overlay { position: fixed; inset: 0; display: grid; place-items: center; background: radial-gradient(ellipse at center, #1c2615 0%, #0a0d07 75%); z-index: 20; transition: opacity .6s ease; }
+.overlay.hidden { opacity: 0; pointer-events: none; }
+.loading-card { width: min(420px, 86vw); text-align: center; }
+.loading-title { font-size: 20px; letter-spacing: .04em; margin-bottom: 16px; }
+.bar { height: 6px; border-radius: 3px; background: rgba(255,255,255,.12); overflow: hidden; }
+#bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #7bb02f, #e3b341); transition: width .2s ease; }
+#loading-note, #error-text { margin-top: 12px; font-size: 13px; opacity: .75; white-space: pre-wrap; }
+#hud { position: fixed; inset: 0; pointer-events: none; z-index: 10; }
+#hud > * { pointer-events: auto; }
+#hud-top { position: absolute; top: 12px; left: 12px; right: 12px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
+#hud-top > * { pointer-events: auto; }
+#status { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; padding: 6px 10px; border-radius: 999px; background: var(--panel); border: 1px solid var(--edge); backdrop-filter: blur(6px); }
+.hud-right { display: flex; gap: 8px; }
+.chip { font: inherit; font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--edge); border-radius: 999px; padding: 7px 12px; cursor: pointer; backdrop-filter: blur(6px); }
+.chip[aria-pressed="true"] { border-color: var(--hot); color: #ffd9a0; }
+.chip:hover { border-color: var(--hot); }
+kbd { font: inherit; font-size: 11px; opacity: .7; border: 1px solid var(--edge); border-radius: 4px; padding: 0 5px; margin-left: 6px; }
+#actions { position: absolute; left: 0; right: 0; bottom: max(18px, env(safe-area-inset-bottom)); display: flex; justify-content: center; gap: 12px; padding: 0 12px; flex-wrap: wrap; }
+.act { font: inherit; font-size: 16px; font-weight: 600; letter-spacing: .02em; color: var(--ink); background: linear-gradient(180deg, rgba(60,44,24,.82), rgba(26,18,10,.86)); border: 1px solid var(--edge); border-radius: 12px; padding: 14px 20px; cursor: pointer; backdrop-filter: blur(8px); box-shadow: 0 6px 22px rgba(0,0,0,.45); transition: transform .12s ease, border-color .12s ease, filter .12s ease; display: inline-flex; align-items: center; gap: 8px; }
+.act:hover:not(:disabled) { border-color: var(--hot); transform: translateY(-2px); }
+.act:active:not(:disabled) { transform: translateY(0); }
+.act.busy { border-color: var(--hot); filter: brightness(1.2); }
+.act.dim { opacity: .55; cursor: not-allowed; }
+.act:focus-visible, .chip:focus-visible { outline: 2px solid var(--hot); outline-offset: 2px; }
+#audio-hint { position: absolute; left: 50%; bottom: 96px; transform: translateX(-50%); font-size: 12px; padding: 6px 12px; border-radius: 999px; background: var(--panel); border: 1px solid var(--edge); opacity: .9; transition: opacity .5s ease; pointer-events: none; }
+#audio-hint.hidden { opacity: 0; }
+.lil-gui.root { z-index: 30; }
+@media (max-width: 640px) { .act { font-size: 14px; padding: 12px 14px; } #audio-hint { bottom: 140px; } }

@@ -1,0 +1,71 @@
+{
+  "generated": "2026-10-28T00:59:36.942Z",
+  "how": "Open /?lab&plain in the dev server and run:  JSON.stringify(await app.runInspection())",
+  "axeScale": 0.78,
+  "stance": {
+    "handleRadiusMm": 45.6,
+    "insideHandle": 89,
+    "deeperThan8mm": 0,
+    "maxPenetrationMm": 5.3,
+    "contactVerts": 264,
+    "wrapCoverageSectors": 10,
+    "axeLocal": [-0.0066, 0.0485, -0.0514, -0.0013, -0.0042, 0.9559, 0.2935],
+    "wristBendDeg": 34,
+    "axeLowestYcm": 55.7
+  },
+  "actions": {
+    "raise": {
+      "duration": 5,
+      "ikErrRightCm": 0,
+      "ikErrLeftCm": 0.6,
+      "stretchedFramesRight": 0,
+      "maxWristBendDeg": 52.9,
+      "maxForearmTwistDeg": 156.2,
+      "maxAnkleSlideMm": 0,
+      "legStretchFrames": 0,
+      "worstGripPenetrationMm": 8.1,
+      "minWrapSectors": 8,
+      "closestAxeToBodyCm": 3.7,
+      "minBladeClearanceMm": null
+    },
+    "chest": {
+      "duration": 5,
+      "ikErrRightCm": 0,
+      "ikErrLeftCm": 0,
+      "stretchedFramesRight": 0,
+      "maxWristBendDeg": 39,
+      "maxForearmTwistDeg": 11.9,
+      "maxAnkleSlideMm": 0,
+      "legStretchFrames": 0,
+      "worstGripPenetrationMm": 5.7,
+      "minWrapSectors": 10,
+      "closestAxeToBodyCm": null,
+      "minBladeClearanceMm": null
+    },
+    "slam": {
+      "duration": 4.6,
+      "ikErrRightCm": 0,
+      "ikErrLeftCm": 0,
+      "stretchedFramesRight": 0,
+      "maxWristBendDeg": 54.7,
+      "maxForearmTwistDeg": 133.3,
+      "maxAnkleSlideMm": 0,
+      "legStretchFrames": 0,
+      "worstGripPenetrationMm": 9.1,
+      "minWrapSectors": 8,
+      "closestAxeToBodyCm": 0.2,
+      "minBladeClearanceMm": 0
+    }
+  },
+  "impact": {
+    "eventTimeS": 2.283,
+    "plannedContact": [-0.34, 0.4238, 1.7],
+    "bladeLowestPoint": [-0.34, 0.4238, 1.7],
+    "gapToRockSurfaceMm": 0
+  },
+  "idle60s": {
+    "rangesCm": { "hipsY": 5.2, "headY": 6.1, "spine2Y": 5.3, "shoulderRY": 14.7, "kneeRY": 2.9, "kneeLY": 1.7 },
+    "maxJawOpenRad": 0.101,
+    "maxFootSlideMm": 0
+  }
+}

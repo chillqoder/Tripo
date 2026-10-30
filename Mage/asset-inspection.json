@@ -1,0 +1,289 @@
+{
+  "wizard": {
+    "source": "purple+wizard+3d+model.glb",
+    "sourceNodes": 1,
+    "sourceMeshes": 1,
+    "sourceSkins": 0,
+    "sourceAnimations": 0,
+    "vertices": 67444,
+    "sourceMin": [
+      -0.48880279064178467,
+      0,
+      -0.14602473378181458
+    ],
+    "sourceMax": [
+      0.48880279064178467,
+      0.8331281542778015,
+      0.14602473378181458
+    ],
+    "forward": "+Z",
+    "up": "+Y",
+    "restPose": "T pose",
+    "preparedBones": [
+      {
+        "name": "root",
+        "parent": null,
+        "restPosition": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "hips",
+        "parent": 0,
+        "restPosition": [
+          0,
+          0.27,
+          0
+        ]
+      },
+      {
+        "name": "spine",
+        "parent": 1,
+        "restPosition": [
+          0,
+          0.45,
+          0
+        ]
+      },
+      {
+        "name": "chest",
+        "parent": 2,
+        "restPosition": [
+          0,
+          0.59,
+          0
+        ]
+      },
+      {
+        "name": "head",
+        "parent": 3,
+        "restPosition": [
+          0,
+          0.665,
+          0.015
+        ]
+      },
+      {
+        "name": "staffShoulder",
+        "parent": 3,
+        "restPosition": [
+          0.12,
+          0.615,
+          0
+        ]
+      },
+      {
+        "name": "staffElbow",
+        "parent": 5,
+        "restPosition": [
+          0.28,
+          0.623,
+          0
+        ]
+      },
+      {
+        "name": "staffWrist",
+        "parent": 6,
+        "restPosition": [
+          0.408,
+          0.634,
+          0.012
+        ]
+      },
+      {
+        "name": "staffFingers",
+        "parent": 7,
+        "restPosition": [
+          0.447,
+          0.638,
+          0.022
+        ]
+      },
+      {
+        "name": "staffFingertips",
+        "parent": 8,
+        "restPosition": [
+          0.472,
+          0.638,
+          0.022
+        ]
+      },
+      {
+        "name": "freeShoulder",
+        "parent": 3,
+        "restPosition": [
+          -0.12,
+          0.615,
+          0
+        ]
+      },
+      {
+        "name": "freeElbow",
+        "parent": 10,
+        "restPosition": [
+          -0.28,
+          0.623,
+          0
+        ]
+      },
+      {
+        "name": "freeWrist",
+        "parent": 11,
+        "restPosition": [
+          -0.408,
+          0.634,
+          0.012
+        ]
+      },
+      {
+        "name": "freeFingers",
+        "parent": 12,
+        "restPosition": [
+          -0.447,
+          0.638,
+          0.022
+        ]
+      },
+      {
+        "name": "freeFingertips",
+        "parent": 13,
+        "restPosition": [
+          -0.472,
+          0.638,
+          0.022
+        ]
+      },
+      {
+        "name": "staffLittle",
+        "parent": 7,
+        "restPosition": [
+          0.442,
+          0.639,
+          -0.023
+        ]
+      },
+      {
+        "name": "staffLittleMiddle",
+        "parent": 15,
+        "restPosition": [
+          0.459,
+          0.637,
+          -0.023
+        ]
+      },
+      {
+        "name": "staffLittleTip",
+        "parent": 16,
+        "restPosition": [
+          0.475,
+          0.635,
+          -0.023
+        ]
+      },
+      {
+        "name": "staffMiddle",
+        "parent": 7,
+        "restPosition": [
+          0.442,
+          0.639,
+          0.001
+        ]
+      },
+      {
+        "name": "staffMiddleMiddle",
+        "parent": 18,
+        "restPosition": [
+          0.459,
+          0.637,
+          0.001
+        ]
+      },
+      {
+        "name": "staffMiddleTip",
+        "parent": 19,
+        "restPosition": [
+          0.475,
+          0.635,
+          0.001
+        ]
+      },
+      {
+        "name": "staffIndex",
+        "parent": 7,
+        "restPosition": [
+          0.442,
+          0.639,
+          0.026
+        ]
+      },
+      {
+        "name": "staffIndexMiddle",
+        "parent": 21,
+        "restPosition": [
+          0.459,
+          0.637,
+          0.026
+        ]
+      },
+      {
+        "name": "staffIndexTip",
+        "parent": 22,
+        "restPosition": [
+          0.475,
+          0.635,
+          0.026
+        ]
+      },
+      {
+        "name": "staffThumb",
+        "parent": 7,
+        "restPosition": [
+          0.412,
+          0.63,
+          0.039
+        ]
+      },
+      {
+        "name": "staffThumbTip",
+        "parent": 24,
+        "restPosition": [
+          0.417,
+          0.62,
+          0.058
+        ]
+      },
+      {
+        "name": "jaw",
+        "parent": 4,
+        "restPosition": [
+          0,
+          0.714,
+          0.055
+        ]
+      }
+    ],
+    "grippingHand": "+X hand (anatomical left), selected from inspected palm geometry",
+    "limitation": "Spatially weighted minimal skin; articulated gripping fingers, opposing thumb and a subtle speech-driven jaw. No full facial rig; best for controlled small elbow bends."
+  },
+  "staff": {
+    "source": "magic+wand+3d+model.glb",
+    "sourceNodes": 1,
+    "sourceMeshes": 1,
+    "sourceSkins": 0,
+    "sourceAnimations": 0,
+    "vertices": 55109,
+    "sourceMin": [
+      -0.311216235,
+      0,
+      -0.135936528
+    ],
+    "sourceMax": [
+      0.311216235,
+      0.980764806,
+      0.135936528
+    ],
+    "note": "Source leans toward -X. Straighten before measuring its full height."
+  }
+}

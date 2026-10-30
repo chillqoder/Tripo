@@ -1,0 +1,24 @@
+{
+  "name": "orc-axe-clearing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive Three.js scene: a massive orc with a battle axe in a forest clearing",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prep:axe": "node tools/rig/prep_axe.mjs",
+    "prep:orc": "/Applications/Blender.app/Contents/MacOS/Blender -b --python tools/rig/build_orc_rig.py",
+    "audio": "tools/.venv/bin/python tools/audio/synth_audio.py",
+    "setup:audio": "python3 -m venv tools/.venv && tools/.venv/bin/pip install -r tools/audio/requirements.txt"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "vite": "^8.3.5"
+  }
+}

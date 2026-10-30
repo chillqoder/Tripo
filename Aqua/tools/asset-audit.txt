@@ -1,0 +1,165 @@
+
+=== aquatic+plant+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_4484f277-3682-4ed7-b0ea-86fecc044d7f" t=-0.001,0.000,-0.002 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_4484f277-3682-4ed7-b0ea-86fecc044d7f" prims=1
+      prim mode=4 verts=116160 tris=119905 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_4484f277-3682-4ed7-b0ea-86fecc044d7f" targets=0 min=-0.486,0.000,-0.127 max=0.486,0.996,0.127
+ worldBounds min [ '-0.487', '0.000', '-0.129' ] max [ '0.485', '0.996', '0.126' ] size [ '0.972', '0.996', '0.255' ]
+ material "tripo_mat_4484f277-3682-4ed7-b0ea-86fecc044d7f" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_4484f277-3682-4ed7-b0ea-86fecc044d7f_0_3" image/jpeg 1024x1024
+ texture "tripo_image_4484f277-3682-4ed7-b0ea-86fecc044d7f_0_0" image/jpeg 1024x1024
+ texture "aquatic_plant_3d_model_metallic-aquatic_plant_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== betta+fish+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_0fe15e40-9143-4a23-9f54-b36a99522e65" t=0.001,0.000,0.002 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_0fe15e40-9143-4a23-9f54-b36a99522e65" prims=1
+      prim mode=4 verts=60301 tris=82333 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_0fe15e40-9143-4a23-9f54-b36a99522e65" targets=0 min=-0.497,0.000,-0.248 max=0.497,0.967,0.248
+ worldBounds min [ '-0.496', '0.000', '-0.247' ] max [ '0.498', '0.967', '0.250' ] size [ '0.994', '0.967', '0.496' ]
+ material "tripo_mat_0fe15e40-9143-4a23-9f54-b36a99522e65" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_0fe15e40-9143-4a23-9f54-b36a99522e65_0_3" image/jpeg 1024x1024
+ texture "tripo_image_0fe15e40-9143-4a23-9f54-b36a99522e65_0_0" image/jpeg 1024x1024
+ texture "betta_fish_3d_model_metallic-betta_fish_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== crab+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_82705904-9426-4666-939b-aa2e3a5ab00b" t=0.000,0.000,-0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_82705904-9426-4666-939b-aa2e3a5ab00b" prims=1
+      prim mode=4 verts=67054 tris=93518 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_82705904-9426-4666-939b-aa2e3a5ab00b" targets=0 min=-0.499,0.000,-0.299 max=0.499,0.371,0.299
+ worldBounds min [ '-0.499', '0.000', '-0.299' ] max [ '0.499', '0.371', '0.299' ] size [ '0.999', '0.371', '0.599' ]
+ material "tripo_mat_82705904-9426-4666-939b-aa2e3a5ab00b" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_82705904-9426-4666-939b-aa2e3a5ab00b_0_3" image/jpeg 1024x1024
+ texture "tripo_image_82705904-9426-4666-939b-aa2e3a5ab00b_0_0" image/jpeg 1024x1024
+ texture "crab_3d_model_metallic-crab_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== freshwater+angelfish+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_0c90c366-a032-4ee5-b937-ffb3f67175c5" t=-0.000,0.000,-0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_0c90c366-a032-4ee5-b937-ffb3f67175c5" prims=1
+      prim mode=4 verts=53909 tris=85699 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_0c90c366-a032-4ee5-b937-ffb3f67175c5" targets=0 min=-0.418,0.000,-0.175 max=0.418,0.998,0.175
+ worldBounds min [ '-0.418', '0.000', '-0.176' ] max [ '0.418', '0.998', '0.175' ] size [ '0.835', '0.998', '0.351' ]
+ material "tripo_mat_0c90c366-a032-4ee5-b937-ffb3f67175c5" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_0c90c366-a032-4ee5-b937-ffb3f67175c5_0_3" image/jpeg 1024x1024
+ texture "tripo_image_0c90c366-a032-4ee5-b937-ffb3f67175c5_0_0" image/jpeg 1024x1024
+ texture "freshwater_angelfish_3d_model_metallic-freshwater_angelfish_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== grass+plant+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_d6cb98b5-a16a-44aa-b767-dd31a478937a" t=0.001,0.000,0.002 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_d6cb98b5-a16a-44aa-b767-dd31a478937a" prims=1
+      prim mode=4 verts=72581 tris=98362 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_d6cb98b5-a16a-44aa-b767-dd31a478937a" targets=0 min=-0.383,0.000,-0.101 max=0.383,0.995,0.101
+ worldBounds min [ '-0.382', '0.000', '-0.099' ] max [ '0.384', '0.995', '0.104' ] size [ '0.766', '0.995', '0.203' ]
+ material "tripo_mat_d6cb98b5-a16a-44aa-b767-dd31a478937a" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_d6cb98b5-a16a-44aa-b767-dd31a478937a_0_3" image/jpeg 1024x1024
+ texture "tripo_image_d6cb98b5-a16a-44aa-b767-dd31a478937a_0_0" image/jpeg 1024x1024
+ texture "grass_plant_3d_model_metallic-grass_plant_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== green+leafy+plant+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_161da29a-d9c6-4278-ae7f-2e1031b14f72" t=0.001,0.000,0.001 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_161da29a-d9c6-4278-ae7f-2e1031b14f72" prims=1
+      prim mode=4 verts=69638 tris=101060 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_161da29a-d9c6-4278-ae7f-2e1031b14f72" targets=0 min=-0.497,0.000,-0.341 max=0.497,0.806,0.341
+ worldBounds min [ '-0.497', '0.000', '-0.340' ] max [ '0.498', '0.806', '0.342' ] size [ '0.995', '0.806', '0.682' ]
+ material "tripo_mat_161da29a-d9c6-4278-ae7f-2e1031b14f72" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_161da29a-d9c6-4278-ae7f-2e1031b14f72_0_3" image/jpeg 1024x1024
+ texture "tripo_image_161da29a-d9c6-4278-ae7f-2e1031b14f72_0_0" image/jpeg 1024x1024
+ texture "green_leafy_plant_3d_model_metallic-green_leafy_plant_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== green+plant+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_d3871b0b-6713-48c7-9ea4-2aa4558ab52f" t=0.001,0.000,0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_d3871b0b-6713-48c7-9ea4-2aa4558ab52f" prims=1
+      prim mode=4 verts=64703 tris=87348 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_d3871b0b-6713-48c7-9ea4-2aa4558ab52f" targets=0 min=-0.494,0.004,-0.236 max=0.494,0.988,0.236
+ worldBounds min [ '-0.493', '0.004', '-0.235' ] max [ '0.494', '0.988', '0.236' ] size [ '0.987', '0.983', '0.471' ]
+ material "tripo_mat_d3871b0b-6713-48c7-9ea4-2aa4558ab52f" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_d3871b0b-6713-48c7-9ea4-2aa4558ab52f_0_3" image/jpeg 1024x1024
+ texture "tripo_image_d3871b0b-6713-48c7-9ea4-2aa4558ab52f_0_0" image/jpeg 1024x1024
+ texture "green_plant_3d_model_metallic-green_plant_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== guppy+fish+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_0dd6148a-599f-4604-8b3f-c94f93c59f34" t=-0.001,0.000,0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_0dd6148a-599f-4604-8b3f-c94f93c59f34" prims=1
+      prim mode=4 verts=47860 tris=81369 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_0dd6148a-599f-4604-8b3f-c94f93c59f34" targets=0 min=-0.499,0.000,-0.177 max=0.499,0.615,0.177
+ worldBounds min [ '-0.499', '0.000', '-0.177' ] max [ '0.498', '0.615', '0.177' ] size [ '0.997', '0.615', '0.354' ]
+ material "tripo_mat_0dd6148a-599f-4604-8b3f-c94f93c59f34" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_0dd6148a-599f-4604-8b3f-c94f93c59f34_0_3" image/jpeg 1024x1024
+ texture "tripo_image_0dd6148a-599f-4604-8b3f-c94f93c59f34_0_0" image/jpeg 1024x1024
+ texture "guppy_fish_3d_model_metallic-guppy_fish_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== medieval+castle+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_80050028-6315-4059-8830-7911e3f10a56" t=0.001,0.000,0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_80050028-6315-4059-8830-7911e3f10a56" prims=1
+      prim mode=4 verts=69474 tris=93890 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_80050028-6315-4059-8830-7911e3f10a56" targets=0 min=-0.498,0.000,-0.214 max=0.498,0.783,0.214
+ worldBounds min [ '-0.497', '0.000', '-0.213' ] max [ '0.499', '0.783', '0.214' ] size [ '0.996', '0.783', '0.427' ]
+ material "tripo_mat_80050028-6315-4059-8830-7911e3f10a56" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_80050028-6315-4059-8830-7911e3f10a56_0_3" image/jpeg 1024x1024
+ texture "tripo_image_80050028-6315-4059-8830-7911e3f10a56_0_0" image/jpeg 1024x1024
+ texture "medieval_castle_3d_model_metallic-medieval_castle_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== orange+clownfish+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_58c50e4a-4ab4-4baa-b7c1-a0e209728d50" t=-0.000,0.000,0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_58c50e4a-4ab4-4baa-b7c1-a0e209728d50" prims=1
+      prim mode=4 verts=56149 tris=86340 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_58c50e4a-4ab4-4baa-b7c1-a0e209728d50" targets=0 min=-0.499,0.000,-0.345 max=0.499,0.675,0.345
+ worldBounds min [ '-0.500', '0.000', '-0.344' ] max [ '0.499', '0.675', '0.345' ] size [ '0.998', '0.675', '0.690' ]
+ material "tripo_mat_58c50e4a-4ab4-4baa-b7c1-a0e209728d50" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_58c50e4a-4ab4-4baa-b7c1-a0e209728d50_0_3" image/jpeg 1024x1024
+ texture "tripo_image_58c50e4a-4ab4-4baa-b7c1-a0e209728d50_0_0" image/jpeg 1024x1024
+ texture "orange_clownfish_3d_model_metallic-orange_clownfish_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== snail+3d+model 2.glb
+ extensionsUsed: -
+  - node "tripo_node_17378bcd-b5f5-4cf7-b998-edd00bba9314" t=-0.000,0.000,-0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_17378bcd-b5f5-4cf7-b998-edd00bba9314" prims=1
+      prim mode=4 verts=53532 tris=85568 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_17378bcd-b5f5-4cf7-b998-edd00bba9314" targets=0 min=-0.499,0.000,-0.279 max=0.499,0.947,0.279
+ worldBounds min [ '-0.499', '0.000', '-0.279' ] max [ '0.499', '0.947', '0.279' ] size [ '0.998', '0.947', '0.558' ]
+ material "tripo_mat_17378bcd-b5f5-4cf7-b998-edd00bba9314" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_17378bcd-b5f5-4cf7-b998-edd00bba9314_0_3" image/jpeg 1024x1024
+ texture "tripo_image_17378bcd-b5f5-4cf7-b998-edd00bba9314_0_0" image/jpeg 1024x1024
+ texture "snail_3d_model_metallic-snail_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== snail+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_1fa545b0-e265-4143-8348-e18d71a3d132" t=0.001,0.000,0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_1fa545b0-e265-4143-8348-e18d71a3d132" prims=1
+      prim mode=4 verts=54506 tris=84911 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_1fa545b0-e265-4143-8348-e18d71a3d132" targets=0 min=-0.497,0.000,-0.330 max=0.497,0.626,0.330
+ worldBounds min [ '-0.496', '0.000', '-0.330' ] max [ '0.498', '0.626', '0.330' ] size [ '0.995', '0.626', '0.660' ]
+ material "tripo_mat_1fa545b0-e265-4143-8348-e18d71a3d132" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_1fa545b0-e265-4143-8348-e18d71a3d132_0_3" image/jpeg 1024x1024
+ texture "tripo_image_1fa545b0-e265-4143-8348-e18d71a3d132_0_0" image/jpeg 1024x1024
+ texture "snail_3d_model_metallic-snail_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== sponge+air+filter+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f" t=-0.000,0.000,-0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f" prims=1
+      prim mode=4 verts=64058 tris=99205 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f" targets=0 min=-0.290,0.000,-0.292 max=0.290,0.999,0.292
+ worldBounds min [ '-0.291', '0.000', '-0.292' ] max [ '0.290', '0.999', '0.292' ] size [ '0.581', '0.999', '0.583' ]
+ material "tripo_mat_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f_0_3" image/jpeg 1024x1024
+ texture "tripo_image_2ae57d33-e53e-458f-bbb5-ff6aa8a26e6f_0_0" image/jpeg 1024x1024
+ texture "sponge_air_filter_3d_model_metallic-sponge_air_filter_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== stone+rock+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_79967b4a-be37-4ae7-aff3-62c5483e1028" t=0.000,0.000,-0.001 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_79967b4a-be37-4ae7-aff3-62c5483e1028" prims=1
+      prim mode=4 verts=60606 tris=89103 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_79967b4a-be37-4ae7-aff3-62c5483e1028" targets=0 min=-0.483,0.000,-0.499 max=0.483,0.594,0.499
+ worldBounds min [ '-0.483', '0.000', '-0.499' ] max [ '0.484', '0.594', '0.498' ] size [ '0.967', '0.594', '0.997' ]
+ material "tripo_mat_79967b4a-be37-4ae7-aff3-62c5483e1028" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_79967b4a-be37-4ae7-aff3-62c5483e1028_0_3" image/jpeg 1024x1024
+ texture "tripo_image_79967b4a-be37-4ae7-aff3-62c5483e1028_0_0" image/jpeg 1024x1024
+ texture "stone_rock_3d_model_metallic-stone_rock_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []
+
+=== stone+rocks+3d+model.glb
+ extensionsUsed: -
+  - node "tripo_node_3c70e1b2-f517-4ff0-a827-04f095e64d69" t=0.000,0.000,-0.000 r=0.000,0.000,0.000,1.000 s=1.000,1.000,1.000 mesh="tripo_mesh_3c70e1b2-f517-4ff0-a827-04f095e64d69" prims=1
+      prim mode=4 verts=49363 tris=91470 attrs=POSITION,NORMAL,TEXCOORD_0 mat="tripo_mat_3c70e1b2-f517-4ff0-a827-04f095e64d69" targets=0 min=-0.499,0.000,-0.500 max=0.499,0.265,0.500
+ worldBounds min [ '-0.499', '0.000', '-0.500' ] max [ '0.499', '0.265', '0.500' ] size [ '0.998', '0.265', '1.000' ]
+ material "tripo_mat_3c70e1b2-f517-4ff0-a827-04f095e64d69" base=1.00,1.00,1.00,1.00 metal=1 rough=1 alpha=OPAQUE dbl=true baseTex=true mrTex=true nTex=true eTex=false
+ texture "tripo_image_3c70e1b2-f517-4ff0-a827-04f095e64d69_0_3" image/jpeg 1024x1024
+ texture "tripo_image_3c70e1b2-f517-4ff0-a827-04f095e64d69_0_0" image/jpeg 1024x1024
+ texture "stone_rocks_3d_model_metallic-stone_rocks_3d_model_roughness" image/png 1024x1024
+ skins 0 animations []

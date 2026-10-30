@@ -1,0 +1,102 @@
+{
+  "pebbles": [
+    {
+      "file": "pebble-0.glb",
+      "source": "stone+rocks+3d+model.glb",
+      "sourceComponents": 3,
+      "sourceCentroid": [
+        -0.231,
+        -0.293
+      ],
+      "sourceTris": 32338,
+      "tris": 326,
+      "size": [
+        0.5475,
+        0.2365,
+        0.466
+      ]
+    },
+    {
+      "file": "pebble-1.glb",
+      "source": "stone+rocks+3d+model.glb",
+      "sourceComponents": 3,
+      "sourceCentroid": [
+        -0.199,
+        0.285
+      ],
+      "sourceTris": 27422,
+      "tris": 356,
+      "size": [
+        0.4772,
+        0.2231,
+        0.4473
+      ]
+    },
+    {
+      "file": "pebble-2.glb",
+      "source": "stone+rocks+3d+model.glb",
+      "sourceComponents": 3,
+      "sourceCentroid": [
+        0.287,
+        0.065
+      ],
+      "sourceTris": 31710,
+      "tris": 316,
+      "size": [
+        0.4378,
+        0.2582,
+        0.5548
+      ]
+    }
+  ],
+  "rocks": [
+    {
+      "file": "rock-0.glb",
+      "source": "stone+rock+3d+model.glb",
+      "sourceComponents": 5,
+      "sourceCentroid": [
+        -0.267,
+        0.046
+      ],
+      "sourceTris": 34334,
+      "tris": 12000,
+      "size": [
+        0.4347,
+        0.4946,
+        0.4284
+      ]
+    },
+    {
+      "file": "rock-1.glb",
+      "source": "stone+rock+3d+model.glb",
+      "sourceComponents": 5,
+      "sourceCentroid": [
+        0.161,
+        -0.256
+      ],
+      "sourceTris": 31220,
+      "tris": 12000,
+      "size": [
+        0.5436,
+        0.2287,
+        0.4699
+      ]
+    },
+    {
+      "file": "rock-2.glb",
+      "source": "stone+rock+3d+model.glb",
+      "sourceComponents": 5,
+      "sourceCentroid": [
+        0.228,
+        0.348
+      ],
+      "sourceTris": 23549,
+      "tris": 12000,
+      "size": [
+        0.532,
+        0.2423,
+        0.3499
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+- generic [active] [ref=f23e1]:
+  - 'generic "Interactive 3D scene: an orc with a battle axe in a forest clearing" [ref=f23e2]'
+  - generic:
+    - generic:
+      - generic: Summoning the orc…
+      - generic: Building the clearing…
+  - alert:
+    - generic: Something went wrong
+  - generic:
+    - generic:
+      - generic [ref=f23e9]: idle
+      - generic [ref=f23e10]:
+        - button "Slow-mo S" [ref=f23e11] [cursor=pointer]
+        - button "🔊 Sound M" [ref=f23e12] [cursor=pointer]
+    - generic: Click or press a key to enable sound
+    - group "Actions" [ref=f23e13]:
+      - button "Raise Axe & Roar 1" [ref=f23e14] [cursor=pointer]:
+        - generic [ref=f23e15]: Raise Axe & Roar
+        - generic [ref=f23e16]: "1"
+      - button "Beat Chest 2" [ref=f23e17] [cursor=pointer]:
+        - generic [ref=f23e18]: Beat Chest
+        - generic [ref=f23e19]: "2"
+      - button "Ground Slam 3" [ref=f23e20] [cursor=pointer]:
+        - generic [ref=f23e21]: Ground Slam
+        - generic [ref=f23e22]: "3"
